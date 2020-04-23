@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>sasang</title>
+	<style>
+		.card {
+	position: absolute;
+	width: 300px;
+	height: 130px;
+	border-radius: 20px;
+	perspective: 500px;
+	left: 11%;
+	border: 0px solid black;
+	top: 22%;
+	margin: -105px;
+	line-height: 150px;
+}
+.card1 {
+	position: absolute;
+	width: 300px;
+	height: 130px;
+	border-radius: 20px;
+	perspective: 500px;
+	left: 38%;
+	border: 0px solid black;
+	top: 22%;
+	margin: -105px;
+	line-height: 150px;
+}
+.card2 {
+	position: absolute;
+	width: 300px;
+	height: 130px;
+	border-radius: 20px;
+	perspective: 500px;
+	left: 66%;
+	border: 0px solid black;
+	top: 22%;
+	margin: -105px;
+	line-height: 150px;
+}
+
+.contain {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transition: transform 3s;
+	transform-style: preserve-3d;
+	padding: 10px;
+}
+.contain1 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transition: transform 3s;
+	transform-style: preserve-3d;
+	padding: 10px;
+}
+.contain2 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transition: transform 3s;
+	transform-style: preserve-3d;
+	padding: 10px;
+}
+.card:hover .contain {
+	transform: rotateY(180deg);
+}
+.card1:hover .contain1 {
+	transform: rotateY(180deg);
+}
+.card2:hover .contain2 {
+	transform: rotateY(180deg);
+}
+.card3 {
+	position: absolute;
+	width: 300px;
+	height: 130px;
+	border-radius: 20px;
+	perspective: 500px;
+	left: 11%;
+	border: 0px solid black;
+	top: 90%;
+	margin: -105px;
+	line-height: 150px;
+}
+.card4 {
+	position: absolute;
+	width: 300px;
+	height: 130px;
+	border-radius: 20px;
+	perspective: 500px;
+	left: 39%;
+    border: 0px solid black;
+    top: 90%;
+	margin: -105px;
+	line-height: 150px;
+}
+.card5 {
+	position: absolute;
+	width: 300px;
+	height: 130px;
+	border-radius: 20px;
+	perspective: 500px;
+	left: 67%;
+    border: 0px solid black;
+   top: 90%;
+	margin: -105px;
+	line-height: 150px;
+}
+.contain3 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transition: transform 3s;
+	transform-style: preserve-3d;
+	padding: 10px;
+}
+.contain4 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transition: transform 3s;
+	transform-style: preserve-3d;
+	padding: 10px;
+}
+.contain5 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transition: transform 3s;
+	transform-style: preserve-3d;
+	padding: 10px;
+}
+.card3:hover .contain3 {
+	transform: rotateY(180deg);
+}
+.card4:hover .contain4 {
+	transform: rotateY(180deg);
+}
+.card5:hover .contain5 {
+	transform: rotateY(180deg);
+}
+.back, .front {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	text-align: center;
+	font-size: 60px;
+	border: 1px solid black;
+	background: #fff;
+	border-radius: 22px / 40px;
+	color: tomato;
+	backface-visibility: hidden;
+}
+.back {
+	background: tomato;
+	color: #fff;
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+}
+/* .card2 {
+	width: 200px;
+	height: 200px;
+	top: 15%;
+	left: 15%;
+	line-height: 200px;
+	position: absolute;
+	box-shadow: 0 0 15px rgba(0,0,0,0.1);
+	background-color: tomato;
+	font-size: 50px;
+	padding: 20px;
+	text-align: center;
+	color: green;
+	animation-name: rajni;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+} */
+@keyframes rajni {
+	0% {border-radius: 0%;}
+	25% { border-radius: 15%; background-color: red; }
+	50% { border-radius: 35%; background-color: yellow; }
+	100% { border-radius: 60%;color: skyblue;background-color: white;}
+}
+	</style>
+</head>
+<body>
+	<div class="container">
+		
+	
+<div class="card">
+	<div class="contain">
+		<div class="front">1</div>
+		<div class="back"><img src="C:\Users\rajni\Desktop\ss\1.jpg" alt=""></div>
+	</div>
+</div>
+<br>
+<div class="card1">
+	<div class="contain1">
+		<div class="front">2</div>
+		<div class="back"><img src="C:\Users\rajni\Desktop\ss\2.jpg" alt=""></div>
+	</div>
+</div>
+<br>
+<div class="card2">
+	<div class="contain2">
+		<div class="front">3</div>
+		<div class="back"><img src="C:\Users\rajni\Desktop\ss\3.jpg" alt=""></div>
+	</div>
+</div>
+<div class="card3">
+	<div class="contain3">
+		<div class="front">4</div>
+		<div class="back"><img src="C:\Users\rajni\Desktop\ss\4.jpg" alt=""></div>
+	</div>
+</div>
+<br>
+<div class="card4">
+	<div class="contain4">
+		<div class="front">5</div>
+		<div class="back"><img src="C:\Users\rajni\Desktop\ss\5.jpg" alt=""></div>
+	</div>
+</div>
+<br>
+<div class="card5">
+	<div class="contain5">
+		<div class="front">6</div>
+		<div class="back"><img src="C:\Users\rajni\Desktop\ss\6.jpg" alt=""></div>
+	</div>
+</div>
+
+</div>
+
+</body>
+</html>
